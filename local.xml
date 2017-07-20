@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="platform_vendor_aos" />
+  <remove-project name="platform_packages_apps_Settings" />
+  <remove-project name="platform_device_qcom_common" />
+  <project name="shekhawat2/platform_vendor_aos" path="vendor/aos" remote="github" revision="n-mr2" />
+  <project name="shekhawat2/platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="n-mr2" />
+  <project name="shekhawat2/android_device_yu_tomato" path="device/yu/tomato" remote="github" revision="aos" />
+  <project name="shekhawat2/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" revision="cm-14.1" />
+  <project name="shekhawat2/Velocity_MSM8916" path="kernel/cyanogen/msm8916" remote="github" revision="N-Tomato-MV" />
+  <project name="shekhawat2/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
+  <project name="shekhawat2/proprietary_vendor_yu" path="vendor/yu" remote="github" revision="cm-14.1" />
+</manifest>
