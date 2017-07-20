@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="losgit" fetch="http://github.com/LineageOS" />
+  <remote name="PAT" fetch="http://github.com/PA-tomato" />
+  <remove-project name="AOSPA/android_vendor_pa" />
+  <remove-project name="AOSPA/android_build" />
+  <remove-project name="AOSPA/android_external_skia" />
+  <remove-project name="AOSPA/android_frameworks_native" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <project name="android_frameworks_native" path="frameworks/native" remote="PAT" revision="nougat-mr2" />
+  <project path="build" name="android_build" remote="PAT" revision="nougat-mr2" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project name="PA-tomato/android_vendor_pa" path="vendor/pa" remote="github" revision="nougat-mr2" >
+       <copyfile src="build.sh" dest="rom-build.sh" />
+  </project>
+  <project name="android_external_skia" path="external/skia" revision="cm-14.1" remote="losgit" />
+  <project name="shekhawat2/android_device_yu_tomato" path="device/yu/tomato" remote="github" revision="pa" />
+  <project name="shekhawat2/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" revision="pa" />
+  <project name="shekhawat2/android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="github" revision="N-Tomato-MV" />
+  <project name="shekhawat2/proprietary_vendor_yu" path="vendor/yu" remote="github" revision="cm-14.1" />
+
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" remote="losgit" revision="cm-14.1-caf" />
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8916" remote="losgit" revision="cm-14.1-caf-8916" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8916" remote="losgit" revision="cm-14.1-caf-8916" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8916" remote="losgit" revision="cm-14.1-caf-8916" />
+<!--  <project name="android_hardware_qcom_fm" path="hardware/qcom/fm" remote="losgit" revision="cm-14.1" /> -->
+  <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="losgit" revision="cm-14.1" />
+  <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="losgit" revision="cm-14.1" />	
+  <project name="android_hardware_qcom_keymaster" path="hardware/qcom/master" remote="losgit" revision="cm-14.1" />
+
+  <project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="losgit" revision="cm-14.1-caf" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="losgit" revision="cm-14.1-caf-8916" />
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="losgit" revision="cm-14.1-caf-8916" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media" remote="losgit" revision="cm-14.1-caf-8916" />
+<!-- <project name="android_hardware_qcom_bt" path="hardware/qcom/bt-caf" remote="losgit" revision="cm-14.1-caf" /> -->
+  <project name="android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="losgit" revision="cm-14.1" />
+
+  <project name="LineageOS/android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" revision="cm-14.1" remote="github" />
+  <project name="LineageOS/android_hardware_cyanogen" path="hardware/cyanogen" remote="github" revision="cm-14.1" />
+  <project name="shekhawat2/android_hardware_ril" path="hardware/ril-caf" revision="cm-14.1-caf" remote="github" />
+</manifest>
