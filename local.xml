@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!--  <remove-project name="LineageOS/android_vendor_lineage" />
+  <remove-project name="LineageOS/android_build" /> -->
+  <remove-project name="platform_frameworks_base" />
+  <remove-project name="platform_packages_apps_Settings" />
+<!--  <remove-project name="platform/frameworks/opt/net/wifi" />
+  <project name="shekhawat2/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="lineage-15.0" /> -->
+  <project name="shekhawat2/platform_frameworks_base" path="frameworks/base" remote="github" revision="8.x" />
+  <project name="shekhawat2/platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="8.x" />
+<!--  <project path="build/make" name="shekhawat2/android_build-2" remote="github" revision="lineage-15.0" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project name="shekhawat2/android_vendor_lineage" path="vendor/lineage" remote="github" revision="lineage-15.0" /> -->
+  <project name="shekhawat2/android_device_yu_tomato" path="device/yu/tomato" remote="github" revision="aexo" />
+  <project name="shekhawat2/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" revision="aexo" />
+  <project name="shekhawat2/KCUFKernel" path="kernel/cyanogen/msm8916" remote="github" revision="o" />
+<!--  <project name="shekhawat2/android_device_qcom_common" path="device/qcom/common" remote="github" revision="lineage-15.0" /> -->
+  <project name="shekhawat2/proprietary_vendor_yu" path="vendor/yu" remote="github" revision="aexo" />
+
+  <remove-project name="android_hardware_qcom_wlan" />
+<!--  <remove-project name="LineageOS/android_system_bt" />
+  <remove-project name="platform_packages_services_Telephony" /> -->
+
+<!--  <project name="shekhawat2/android_system_bt" path="system/bt" remote="github" revision="lineage-15.0" /> -->
+  <project name="shekhawat2/android_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" remote="github" revision="lineage-15.0-caf" /> -->
+  <project name="LineageOS/android_hardware_cyanogen" path="hardware/cyanogen" remote="github" revision="lineage-15.0" />
+<!--  <project name="AEXBEX/platform_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="8.x" /> -->
+
+</manifest>
