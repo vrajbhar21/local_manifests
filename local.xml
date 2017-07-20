@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="DU" fetch="http://github.com/DirtyUnicorns" /> 
+  <remote name="losgit" fetch="http://github.com/LineageOS" />
+  <remote name="DUT" fetch="http://github.com/DU-tomato" />
+  <remove-project name="android_vendor_du" />
+  <remove-project name="android_hardware_qcom_wlan" />
+  <remove-project name="android_build" />
+  <remove-project name="android_frameworks_base" />
+  <remove-project name="android_frameworks_native" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="DUT" revision="n7x" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="DUT" revision="n7x-caf" />
+  <project path="build" name="android_build" revision="n7x-caf" remote="DUT" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project name="android_vendor_du" path="vendor/du" revision="n7x" remote="DUT" />
+  <project name="shekhawat2/android_device_yu_tomato" path="device/yu/tomato" remote="github" revision="du" />
+  <project name="shekhawat2/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" revision="du" />
+  <project name="shekhawat2/Velocity_MSM8916" path="kernel/cyanogen/msm8916" remote="github" revision="N-Tomato-MV" />
+  <project name="shekhawat2/proprietary_vendor_yu" path="vendor/yu" remote="github" revision="cm-14.1" />
+  <project path="external/bson" name="android_external_bson" revision="n7x-caf" remote="DU" />
+  <project path="hardware/qcom/audio-caf/msm8916" name="android_hardware_qcom_audio" revision="n7x-caf-8916" remote="DU" />
+  <project path="hardware/qcom/display-caf/msm8916" name="android_hardware_qcom_display" revision="n7x-caf-8916" remote="DU" />
+  <project path="hardware/qcom/media-caf/msm8916" name="android_hardware_qcom_media" revision="n7x-caf-8916" remote="DU" />
+  <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" revision="n7x-caf" remote="DU" />
+  <project path="hardware/qcom/wlan" name="cyanogenmod/android_hardware_qcom_wlan" revision="cm-14.1-caf" remote="github" />
+  <project path="system/qcom" name="android_system_qcom" revision="n7x-caf" remote="DU" />
+
+<!-- <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" revision="n7x-caf" remote="DU" /> -->
+  <project path="hardware/ril-caf" name="shekhawat2/android_hardware_ril" revision="cm-14.1-caf" remote="github" />
+<!-- <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" revision="cm-14.1" remote="losgit" /> -->
+  <project path="hardware/cyanogen" name="android_hardware_cyanogen" revision="cm-14.1" remote="losgit" />
+  <project name="android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="losgit" revision="cm-14.1" />
+</manifest>
