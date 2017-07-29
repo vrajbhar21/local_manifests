@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="android_vendor_viper" />
+  <remove-project name="android_packages_apps_VLauncher" />
+  <project name="shekhawat2/android_vendor_viper" path="vendor/viper" remote="github" revision="nougat" />
+  <project name="shekhawat2/android_device_yu_tomato" path="device/yu/tomato" remote="github" revision="viper" />
+  <project name="shekhawat2/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" revision="cm-14.1" />
+  <project name="Shoaib0597/Velocity_MSM8916" path="kernel/cyanogen/msm8916" remote="github" revision="N-Tomato-MV" />
+  <project name="shekhawat2/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
+  <project name="shekhawat2/proprietary_vendor_yu" path="vendor/yu" remote="github" revision="cm-14.1" />
+</manifest>
